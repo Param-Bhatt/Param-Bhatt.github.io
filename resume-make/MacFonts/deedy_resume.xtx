@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{
+\namesection{Param}{Bhatt}{ \urlstyle{same}\href{http://param-bhatt.github.io}{Param-Bhatt}  |     +91-9428686244\\
+}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BITS Pilani, Hyd. Campus}
+\descript{BE Electronics and Instrumentation}
+\location{Ongoing | Hyderabad,India}
+\sectionsep
+
+\subsection{Naimisharanya School}
+\descript{Intermediate}
+\location{May 2016 | Bhavnagar,India}
+Central Board of Secondary Education \\
+\location{ Percentage: 87.8}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Param-Bhatt}{\bf Param-Bhatt} \\
+LinkedIn://  \href{https://www.linkedin.com/in/param-bhatt-5859591a9/}{\bf Param Bhatt} \\
+Whatsapp://  \href{https://wa.me/919428686244?text=}{\bf Param Bhatt}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Information Retrieval (ongoing) \\
+Neural Networks \&Fuzzy Logic (ongoing) \\
+Computer Graphics \\
+Microprocessors and Interfacing \\
+Digital Design \\
+Computer Programming ( C & C++ )
+\sectionsep
+\subsection{Certifications}
+Applied Machine Learning in Python\\
+{\footnotesize \textit{\textbf{(Michigan University) }}} \\
+Algorithmic Toolbox\\
+{\footnotesize \textit{\textbf{(University of California, San Diego) }}} \\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Well-Versed}
+\textbullet{} C++ \textbullet{}   Python \textbullet{} PHP \textbullet{} \\
+HTML/CSS \textbullet{} Bootstrap\ \\
+
+\location{Familiar}
+\textbullet{} C \textbullet{} Algorithms \textbullet{} Javascript \textbullet{} NodeJS \textbullet{} OpenGL \\
+
+\location{Basic:}
+\textbullet{} Django \textbullet{} Machine-Learning \textbullet{} Git{}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Co-Curricular Activities
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Co-Curriculars}
+\textbullet{} Chess player \\
+\textbullet{} Yoga Medalist \\
+\textbullet{} Hobbyist Swimmer \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Student Welfare Division, BITS Hyderabad}\\
+\descript{Co-ordinator and Backend Web developer }
+\location{May 2020 - Present | BITS Hyderabad}
+\begin{tightemize}
+\vspace{\topsep}
+\item As a co-ordinator, I lead the SWD Nucleus team, provide new directions and initiatives to my team. So far, I have helped in the making of the iOS app and helped increase the interaction between professors and students significantly.
+\item A part of the team involved in remaking our SWD website from the scratch. The frontend has been developed using React JS, and the API layer has been written with Node/ Express JS and MySQL database.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Visualisation and Graphics Lab , Indian Institute of Science}\\
+\descript{Full stack developer }
+\location{May 2020 - July 2020}
+\begin{tightemize}
+\item Developed the main website for VGL,IISc from scratch.
+\item Designed frontend with bootstrap with the backend written in PHP 7.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CueMath Pvt. Ltd.}\\
+\descript{Summer Intern }
+\location{May 2020 - June 2020}
+\begin{tightemize}
+\item Worked on the backend of a web platform to crowdsource useful learning resources and materials related to any topics. The backend had been developed using Django with the Django Rest Framework.
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{Student Welfare Division, BITS Hyderabad }\\
+%\descript{Website maintainer and updater}
+%\location{August 2019 - May 2020 | BITS Hyderabad}
+%\begin{tightemize}
+%\item To maintain the existing website of Student Welfare Division , Hyderabad and update and %improve it , as and when required.
+%\item My notable contributions include an api layer for the SWD App , a fully anonymous %counsellor booking portal and a main-gate monitoring system for the campus.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\section{Projects}
+\runsubsection{\href{https://play.google.com/store/apps/details?id=in.ac.bits_hyderabad.swd.swd}{SWD App}}
+\descript{| API Developer}
+\location{April 2019 - June 2019}
+Worked with \textbf{\href{https://www.linkedin.com/in/prasoon0459/}{Prasoon Baghel}} to create an API layer and an Android app for the app of Student Welfare Division , BITS Hyderabad. The app is now universally used across my entire college, by more 4000 students on a daily basis. It also has successfully completed more than 10,000 transactions for the various campus goodies. 
+\sectionsep
+
+\runsubsection{A Ray Tracer}
+\descript{}
+\location{Mar 2020 – April 2020}
+A light ray tracer written with the help of opengl module of Python 3. Our results were plotted using the py-plot module.
+\sectionsep
+
+\runsubsection{Stock Market Predictor}
+\descript{}
+\location{April 2020}
+A Machine Learning model trained and tested on predicting the stock market opening and closing prices of a particular company. It has worked at an accuracy of over 71 \% including the rapid stock exchanges occured during the outbreak of covid-19.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Other Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Other Achievements} 
+\begin{tabular}{rll}
+2020	     & 4\textsuperscript{th}/32  & Blitz Chess Championship, Arena\\
+2019	     & 2\textsuperscript{nd}/10  & Classical Chess Championship, AIRO\\
+2016	     & 1\textsuperscript{st}(All India)  & National Genius Search Examination\\
+2015	     & 8\textsuperscript{th}/173  & Gujarat State Chess Championship\\
+2013     & 16\textsuperscript{th}/400 & West Zone Chess Championship  \\
+2010-12     & Scholarship & Awarded Max New York Life Igenius Scholarship \\
+2009     & 3\textsuperscript{rd}/50 & Gujarat State Yoga Competition \\
+\end{tabular}
+\sectionsep
+\end{minipage} 
+\end{document}  \documentclass[]{article}
